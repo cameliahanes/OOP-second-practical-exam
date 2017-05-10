@@ -8,14 +8,12 @@
 using namespace std;
 
 class UI {
-
 private:
 	Controller c;
 	stack<UndoOperation*> operations;
 
 public:
 	UI(Controller& co) : c{ co } {}
-
 	void print_menu() {
 		std::cout << "Options: \n  ";
 		std::cout << "1 - print all paintings in the gallery \n  ";
@@ -39,7 +37,6 @@ public:
 		for (auto p : paintings_special) {
 			cout << p->toString();
 		}
-
 	}
 
 	void add_painting_menu() {
