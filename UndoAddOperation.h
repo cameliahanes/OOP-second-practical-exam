@@ -12,8 +12,6 @@ public:
 	void UndoAddOperation::execute_undo() {
 		this->paintings_repo.remove_painting(this->painting);
 	}
-
-
 };
 
 
