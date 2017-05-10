@@ -6,6 +6,7 @@ class UndoAddOperation : public UndoOperation {
 private:
 	Repository &paintings_repo;
 	
+	
 public:
 	UndoAddOperation(Painting* p, Repository& r) : UndoOperation{ p }, paintings_repo{r} {	}
 
